@@ -1,4 +1,5 @@
 name: Publish Fungo Italia beta from source branch
+# Redeploy request 2026-10-09
 on:
   push:
     branches: [main]
