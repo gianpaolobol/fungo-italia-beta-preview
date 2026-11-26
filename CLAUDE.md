@@ -1,0 +1,2 @@
+@LINEE_GUIDA.md
+@AGENTS.md

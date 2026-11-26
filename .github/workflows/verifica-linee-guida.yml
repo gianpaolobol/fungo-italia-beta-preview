@@ -1,0 +1,15 @@
+# File gestito dalla sincronizzazione delle linee guida (registro-delle-idee). Non modificarlo qui.
+name: Verifica linee guida
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verifica:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 .github/linee-guida/verifica.py .
